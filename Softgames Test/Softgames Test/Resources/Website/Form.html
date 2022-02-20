@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript">
+            function getFullName() {
+                var firstName = $("#fname").val();
+                var lastName = $("#lname").val();
+                
+                var Dict = {};
+                Dict.firstName= firstName;
+                Dict.lastName= lastName;
+                window.webkit.messageHandlers.fullNameMessageHandler.postMessage(Dict);
+            }
+            
+            function checkAge() {
+                var dobirth = $("#dobirth").val();
+                var Dict = {};
+                Dict.dobirth= dobirth;
+                window.webkit.messageHandlers.ageMessageHandler.postMessage(Dict);
+            }
+            function fillFullName(jsonData){
+                var userData = JSON.parse(jsonData);
+                document.getElementById('lblFullName').innerHTML = userData["fullName"];
+            }
+            function fillAge(jsonData){
+                var userData = JSON.parse(jsonData);
+                document.getElementById('lblAge').innerHTML = userData["age"];
+            }
+            
+        </script>
+    </head>
+    <body>
+        <form>
+            <h1> Hamza's Form</h1>
+            <label>First name:</label><br>
+            <input type="text" name="FirstName" id="fname" placeholder="First Name"><br>
+                <label>Last name:</label><br>
+                <input type="text" name="LastName" id="lname" placeholder="Last Name"><br>
+                    <label>Date of Birth:</label><br>
+                    <input type="date" name="Date of Birth" id ="dobirth" placeholder="Date of Birth">
+                        <hr>
+                        <button type="button" onclick="getFullName()">Sync</button>
+                        <button type="button" onclick="checkAge()">Async</button><br>
+                        <label id="lblFullName">Full Name: ?? </label><br>
+                        <label id="lblAge">Age: ?? </label><br>
+                    </form>
+    </body>
+</html>
