@@ -13,10 +13,10 @@
 		63A867D327C16A52008B42C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A867D227C16A52008B42C6 /* Assets.xcassets */; };
 		63A867D627C16A52008B42C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A867D427C16A52008B42C6 /* LaunchScreen.storyboard */; };
 		63A867E127C16A53008B42C6 /* Softgames_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A867E027C16A53008B42C6 /* Softgames_TestTests.swift */; };
-		63A867EB27C16A53008B42C6 /* Softgames_TestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A867EA27C16A53008B42C6 /* Softgames_TestUITests.swift */; };
-		63A867ED27C16A53008B42C6 /* Softgames_TestUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A867EC27C16A53008B42C6 /* Softgames_TestUITestsLaunchTests.swift */; };
 		63A8680027C180B8008B42C6 /* Form.html in Resources */ = {isa = PBXBuildFile; fileRef = 63A867FF27C180B8008B42C6 /* Form.html */; };
 		63A8680227C18265008B42C6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8680127C18265008B42C6 /* WebViewController.swift */; };
+		63A8680C27C32203008B42C6 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8680B27C32203008B42C6 /* WebViewModel.swift */; };
+		63A8680F27C324E3008B42C6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8680E27C324E3008B42C6 /* Constant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,10 +47,10 @@
 		63A867DC27C16A53008B42C6 /* Softgames TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Softgames TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A867E027C16A53008B42C6 /* Softgames_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Softgames_TestTests.swift; sourceTree = "<group>"; };
 		63A867E627C16A53008B42C6 /* Softgames TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Softgames TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63A867EA27C16A53008B42C6 /* Softgames_TestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Softgames_TestUITests.swift; sourceTree = "<group>"; };
-		63A867EC27C16A53008B42C6 /* Softgames_TestUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Softgames_TestUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		63A867FF27C180B8008B42C6 /* Form.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Form.html; sourceTree = "<group>"; };
 		63A8680127C18265008B42C6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		63A8680B27C32203008B42C6 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
+		63A8680E27C324E3008B42C6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,7 +83,6 @@
 			children = (
 				63A867C827C16A50008B42C6 /* Softgames Test */,
 				63A867DF27C16A53008B42C6 /* Softgames TestTests */,
-				63A867E927C16A53008B42C6 /* Softgames TestUITests */,
 				63A867C727C16A50008B42C6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -116,19 +115,11 @@
 			path = "Softgames TestTests";
 			sourceTree = "<group>";
 		};
-		63A867E927C16A53008B42C6 /* Softgames TestUITests */ = {
-			isa = PBXGroup;
-			children = (
-				63A867EA27C16A53008B42C6 /* Softgames_TestUITests.swift */,
-				63A867EC27C16A53008B42C6 /* Softgames_TestUITestsLaunchTests.swift */,
-			);
-			path = "Softgames TestUITests";
-			sourceTree = "<group>";
-		};
 		63A867FB27C16A94008B42C6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				63A8680127C18265008B42C6 /* WebViewController.swift */,
+				63A8681027C32613008B42C6 /* WebView */,
+				63A8680D27C324D7008B42C6 /* common */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -160,6 +151,47 @@
 				63A867FF27C180B8008B42C6 /* Form.html */,
 			);
 			path = Website;
+			sourceTree = "<group>";
+		};
+		63A8680727C321C3008B42C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63A8680127C18265008B42C6 /* WebViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63A8680927C321D1008B42C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63A8680B27C32203008B42C6 /* WebViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63A8680A27C321E7008B42C6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		63A8680D27C324D7008B42C6 /* common */ = {
+			isa = PBXGroup;
+			children = (
+				63A8680E27C324E3008B42C6 /* Constant.swift */,
+			);
+			path = common;
+			sourceTree = "<group>";
+		};
+		63A8681027C32613008B42C6 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				63A8680A27C321E7008B42C6 /* Model */,
+				63A8680927C321D1008B42C6 /* ViewModel */,
+				63A8680727C321C3008B42C6 /* View */,
+			);
+			path = WebView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +328,9 @@
 			files = (
 				63A867CA27C16A50008B42C6 /* AppDelegate.swift in Sources */,
 				63A8680227C18265008B42C6 /* WebViewController.swift in Sources */,
+				63A8680F27C324E3008B42C6 /* Constant.swift in Sources */,
 				63A867CC27C16A50008B42C6 /* SceneDelegate.swift in Sources */,
+				63A8680C27C32203008B42C6 /* WebViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,8 +346,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63A867ED27C16A53008B42C6 /* Softgames_TestUITestsLaunchTests.swift in Sources */,
-				63A867EB27C16A53008B42C6 /* Softgames_TestUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
