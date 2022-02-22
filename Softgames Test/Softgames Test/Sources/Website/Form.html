@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src = "Script.js"></script>
+    </head>
+    <body>
+        <form>
+            <h1>iOS Developer Test</h1>
+            <h2>Task 1: WebView to Swift communication</h2>
+            <label>First name:</label><br>
+            <input type="text" name="FirstName" id="fname" placeholder="First Name"><br>
+                <label>Last name:</label><br>
+                <input type="text" name="LastName" id="lname" placeholder="Last Name"><br>
+                    <label>Date of Birth:</label><br>
+                    <input type="date" name="Date of Birth" id ="dobirth" placeholder="Date of Birth"><br>
+                        <button type="button" onclick="getFullName()">Sync</button>
+                        <button type="button" onclick="checkAge()">Async</button><br>
+                        <label id="lblFullName">Full Name: ?? </label><br>
+                        <label id="lblAge">Age: ?? </label><br>
+                        <hr>
+                        <h2>Task 2: Local Notifications</h2>
+                        <button type="button" onclick="getNotification()">Send Notification</button><br>
+                    </form>
+    </body>
+</html>

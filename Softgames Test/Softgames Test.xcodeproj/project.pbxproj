@@ -12,22 +12,18 @@
 		63A867D127C16A50008B42C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A867CF27C16A50008B42C6 /* Main.storyboard */; };
 		63A867D327C16A52008B42C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63A867D227C16A52008B42C6 /* Assets.xcassets */; };
 		63A867D627C16A52008B42C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63A867D427C16A52008B42C6 /* LaunchScreen.storyboard */; };
-		63A867E127C16A53008B42C6 /* Softgames_TestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A867E027C16A53008B42C6 /* Softgames_TestTests.swift */; };
 		63A8680027C180B8008B42C6 /* Form.html in Resources */ = {isa = PBXBuildFile; fileRef = 63A867FF27C180B8008B42C6 /* Form.html */; };
 		63A8680227C18265008B42C6 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8680127C18265008B42C6 /* WebViewController.swift */; };
 		63A8680C27C32203008B42C6 /* WebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8680B27C32203008B42C6 /* WebViewModel.swift */; };
 		63A8680F27C324E3008B42C6 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8680E27C324E3008B42C6 /* Constant.swift */; };
+		63A8681927C33CE7008B42C6 /* WebViewModelTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8681827C33CE7008B42C6 /* WebViewModelTest.swift */; };
+		63A8681B27C33D0F008B42C6 /* WebViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8681A27C33D0F008B42C6 /* WebViewControllerTest.swift */; };
+		63A8682727C36153008B42C6 /* Script.js in Resources */ = {isa = PBXBuildFile; fileRef = 63A8682427C35A70008B42C6 /* Script.js */; };
+		63A8682927C5827A008B42C6 /* Enum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A8682827C5827A008B42C6 /* Enum.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		63A867DD27C16A53008B42C6 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 63A867BE27C16A50008B42C6 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 63A867C527C16A50008B42C6;
-			remoteInfo = "Softgames Test";
-		};
-		63A867E727C16A53008B42C6 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 63A867BE27C16A50008B42C6 /* Project object */;
 			proxyType = 1;
@@ -45,12 +41,14 @@
 		63A867D527C16A52008B42C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		63A867D727C16A52008B42C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		63A867DC27C16A53008B42C6 /* Softgames TestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Softgames TestTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		63A867E027C16A53008B42C6 /* Softgames_TestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Softgames_TestTests.swift; sourceTree = "<group>"; };
-		63A867E627C16A53008B42C6 /* Softgames TestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Softgames TestUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63A867FF27C180B8008B42C6 /* Form.html */ = {isa = PBXFileReference; lastKnownFileType = text.html; path = Form.html; sourceTree = "<group>"; };
 		63A8680127C18265008B42C6 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		63A8680B27C32203008B42C6 /* WebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModel.swift; sourceTree = "<group>"; };
 		63A8680E27C324E3008B42C6 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		63A8681827C33CE7008B42C6 /* WebViewModelTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewModelTest.swift; sourceTree = "<group>"; };
+		63A8681A27C33D0F008B42C6 /* WebViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewControllerTest.swift; sourceTree = "<group>"; };
+		63A8682427C35A70008B42C6 /* Script.js */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.javascript; path = Script.js; sourceTree = "<group>"; };
+		63A8682827C5827A008B42C6 /* Enum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Enum.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,13 +60,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63A867D927C16A52008B42C6 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63A867E327C16A53008B42C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -92,7 +83,6 @@
 			children = (
 				63A867C627C16A50008B42C6 /* Softgames Test.app */,
 				63A867DC27C16A53008B42C6 /* Softgames TestTests.xctest */,
-				63A867E627C16A53008B42C6 /* Softgames TestUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -110,7 +100,7 @@
 		63A867DF27C16A53008B42C6 /* Softgames TestTests */ = {
 			isa = PBXGroup;
 			children = (
-				63A867E027C16A53008B42C6 /* Softgames_TestTests.swift */,
+				63A8681127C33C34008B42C6 /* WebView */,
 			);
 			path = "Softgames TestTests";
 			sourceTree = "<group>";
@@ -118,8 +108,9 @@
 		63A867FB27C16A94008B42C6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				63A867FE27C16B44008B42C6 /* Website */,
 				63A8681027C32613008B42C6 /* WebView */,
-				63A8680D27C324D7008B42C6 /* common */,
+				63A8680D27C324D7008B42C6 /* Common */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -127,7 +118,6 @@
 		63A867FC27C16A9C008B42C6 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				63A867FE27C16B44008B42C6 /* Website */,
 				63A867D227C16A52008B42C6 /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -149,6 +139,7 @@
 			isa = PBXGroup;
 			children = (
 				63A867FF27C180B8008B42C6 /* Form.html */,
+				63A8682427C35A70008B42C6 /* Script.js */,
 			);
 			path = Website;
 			sourceTree = "<group>";
@@ -169,29 +160,47 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
-		63A8680A27C321E7008B42C6 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		63A8680D27C324D7008B42C6 /* common */ = {
+		63A8680D27C324D7008B42C6 /* Common */ = {
 			isa = PBXGroup;
 			children = (
 				63A8680E27C324E3008B42C6 /* Constant.swift */,
+				63A8682827C5827A008B42C6 /* Enum.swift */,
 			);
-			path = common;
+			path = Common;
 			sourceTree = "<group>";
 		};
 		63A8681027C32613008B42C6 /* WebView */ = {
 			isa = PBXGroup;
 			children = (
-				63A8680A27C321E7008B42C6 /* Model */,
 				63A8680927C321D1008B42C6 /* ViewModel */,
 				63A8680727C321C3008B42C6 /* View */,
 			);
 			path = WebView;
+			sourceTree = "<group>";
+		};
+		63A8681127C33C34008B42C6 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				63A8681327C33C48008B42C6 /* View */,
+				63A8681227C33C3D008B42C6 /* ViewModel */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		63A8681227C33C3D008B42C6 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				63A8681827C33CE7008B42C6 /* WebViewModelTest.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		63A8681327C33C48008B42C6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63A8681A27C33D0F008B42C6 /* WebViewControllerTest.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -232,24 +241,6 @@
 			productReference = 63A867DC27C16A53008B42C6 /* Softgames TestTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		63A867E527C16A53008B42C6 /* Softgames TestUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 63A867F627C16A53008B42C6 /* Build configuration list for PBXNativeTarget "Softgames TestUITests" */;
-			buildPhases = (
-				63A867E227C16A53008B42C6 /* Sources */,
-				63A867E327C16A53008B42C6 /* Frameworks */,
-				63A867E427C16A53008B42C6 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				63A867E827C16A53008B42C6 /* PBXTargetDependency */,
-			);
-			name = "Softgames TestUITests";
-			productName = "Softgames TestUITests";
-			productReference = 63A867E627C16A53008B42C6 /* Softgames TestUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -265,10 +256,7 @@
 					};
 					63A867DB27C16A52008B42C6 = {
 						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 63A867C527C16A50008B42C6;
-					};
-					63A867E527C16A53008B42C6 = {
-						CreatedOnToolsVersion = 13.0;
+						LastSwiftMigration = 1300;
 						TestTargetID = 63A867C527C16A50008B42C6;
 					};
 				};
@@ -288,7 +276,6 @@
 			targets = (
 				63A867C527C16A50008B42C6 /* Softgames Test */,
 				63A867DB27C16A52008B42C6 /* Softgames TestTests */,
-				63A867E527C16A53008B42C6 /* Softgames TestUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -300,19 +287,13 @@
 			files = (
 				63A8680027C180B8008B42C6 /* Form.html in Resources */,
 				63A867D627C16A52008B42C6 /* LaunchScreen.storyboard in Resources */,
+				63A8682727C36153008B42C6 /* Script.js in Resources */,
 				63A867D327C16A52008B42C6 /* Assets.xcassets in Resources */,
 				63A867D127C16A50008B42C6 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		63A867DA27C16A52008B42C6 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63A867E427C16A53008B42C6 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -328,6 +309,7 @@
 			files = (
 				63A867CA27C16A50008B42C6 /* AppDelegate.swift in Sources */,
 				63A8680227C18265008B42C6 /* WebViewController.swift in Sources */,
+				63A8682927C5827A008B42C6 /* Enum.swift in Sources */,
 				63A8680F27C324E3008B42C6 /* Constant.swift in Sources */,
 				63A867CC27C16A50008B42C6 /* SceneDelegate.swift in Sources */,
 				63A8680C27C32203008B42C6 /* WebViewModel.swift in Sources */,
@@ -338,14 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				63A867E127C16A53008B42C6 /* Softgames_TestTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		63A867E227C16A53008B42C6 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				63A8681927C33CE7008B42C6 /* WebViewModelTest.swift in Sources */,
+				63A8681B27C33D0F008B42C6 /* WebViewControllerTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,11 +332,6 @@
 			isa = PBXTargetDependency;
 			target = 63A867C527C16A50008B42C6 /* Softgames Test */;
 			targetProxy = 63A867DD27C16A53008B42C6 /* PBXContainerItemProxy */;
-		};
-		63A867E827C16A53008B42C6 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 63A867C527C16A50008B42C6 /* Softgames Test */;
-			targetProxy = 63A867E727C16A53008B42C6 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -514,6 +485,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,6 +513,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +532,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -572,6 +547,8 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hamza.Softgames-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Softgames Test.app/Softgames Test";
@@ -583,6 +560,8 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = NO;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -596,53 +575,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.hamza.Softgames-TestTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Softgames Test.app/Softgames Test";
-			};
-			name = Release;
-		};
-		63A867F727C16A53008B42C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hamza.Softgames-TestUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Softgames Test";
-			};
-			name = Debug;
-		};
-		63A867F827C16A53008B42C6 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.hamza.Softgames-TestUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "Softgames Test";
 			};
 			name = Release;
 		};
@@ -672,15 +608,6 @@
 			buildConfigurations = (
 				63A867F427C16A53008B42C6 /* Debug */,
 				63A867F527C16A53008B42C6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		63A867F627C16A53008B42C6 /* Build configuration list for PBXNativeTarget "Softgames TestUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				63A867F727C16A53008B42C6 /* Debug */,
-				63A867F827C16A53008B42C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
